@@ -1,5 +1,7 @@
 # BITSHARES DEX UX
 
+<img src="Screenshot from 2023-02-18 18-14-28.png"></img>
+
 ## Bitshares Decentralized Exchange User Experience
 
 A framework for server side rendering DEX UI/UX in Python with minimal dependencies
