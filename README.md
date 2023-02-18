@@ -87,7 +87,9 @@ NOTE: Tested with Brave and Firefox browsers, others may or may not work.
 ### JavaScript Dependencies:
 
 [Plotly](https://plotly.com/)
+
 [TradingView LightWeightCharts](https://www.tradingview.com/lightweight-charts/)
+
 [KLineChart](https://klinecharts.com/)
 
 ### Python Dependencies:
