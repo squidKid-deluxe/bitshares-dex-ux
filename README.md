@@ -38,6 +38,9 @@ Pools and Limit Order Books on one interface
 
 ### Stack:
 
+
+<img src="stack.png"></img>
+
 - Socketify
 - Falcon
 - PyPy
