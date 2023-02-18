@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bitshares DEX UX - Bitshares Decentralized Exchange User Experience</title>
+  <link rel="icon" href="assets/img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body id="dark">
+
+  <header class="dark-bb">
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="exchange-dark.html"><img src="assets/bitshares.png" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#headerMenu"
+        aria-controls="headerMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="icon ion-md-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="headerMenu">
+        <ul class="navbar-nav ml-auto">
+          <a href="signin-dark.html" class="btn-1">Sign In</a>
+          <a href="signup-dark.html" class="btn-2">Sign Up</a>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <script>
+    function onclicker() {
+      window.location.href = 'exchange.html?user='+document.getElementById('user').value
+    }
+  </script>
+  <div class="landing-hero">
+    <div class="container">
+      <div class="row">
+        <div class="offset-md-2 col-md-8 text-center">
+          <img src="assets/bitshares.png" alt="logo" style="width:20vw">
+          <div style="height:20px"></div>
+          <h2>Bitshares</h2>
+          <h3>A <strong>trusted and secure</strong> decentralized exchange</h3>
+          <p></p>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Enter Your Username" aria-label="Enter Your Username"
+              aria-describedby="button-addon2" id="user">
+            <div class="input-group-append">
+              <button class="btn btn-primary" type="button" id="button-addon2" onclick="onclicker()">Trade Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,1034 @@
+/*
+generated from python
+editing can be done at the end of red-bg-100 and green-bg-100
+*/
+.red-bg-0,
+.red-bg-1,
+.red-bg-2,
+.red-bg-3,
+.red-bg-4,
+.red-bg-5,
+.red-bg-6,
+.red-bg-7,
+.red-bg-8,
+.red-bg-9,
+.red-bg-10,
+.red-bg-11,
+.red-bg-12,
+.red-bg-13,
+.red-bg-14,
+.red-bg-15,
+.red-bg-16,
+.red-bg-17,
+.red-bg-18,
+.red-bg-19,
+.red-bg-20,
+.red-bg-21,
+.red-bg-22,
+.red-bg-23,
+.red-bg-24,
+.red-bg-25,
+.red-bg-26,
+.red-bg-27,
+.red-bg-28,
+.red-bg-29,
+.red-bg-30,
+.red-bg-31,
+.red-bg-32,
+.red-bg-33,
+.red-bg-34,
+.red-bg-35,
+.red-bg-36,
+.red-bg-37,
+.red-bg-38,
+.red-bg-39,
+.red-bg-40,
+.red-bg-41,
+.red-bg-42,
+.red-bg-43,
+.red-bg-44,
+.red-bg-45,
+.red-bg-46,
+.red-bg-47,
+.red-bg-48,
+.red-bg-49,
+.red-bg-50,
+.red-bg-51,
+.red-bg-52,
+.red-bg-53,
+.red-bg-54,
+.red-bg-55,
+.red-bg-56,
+.red-bg-57,
+.red-bg-58,
+.red-bg-59,
+.red-bg-60,
+.red-bg-61,
+.red-bg-62,
+.red-bg-63,
+.red-bg-64,
+.red-bg-65,
+.red-bg-66,
+.red-bg-67,
+.red-bg-68,
+.red-bg-69,
+.red-bg-70,
+.red-bg-71,
+.red-bg-72,
+.red-bg-73,
+.red-bg-74,
+.red-bg-75,
+.red-bg-76,
+.red-bg-77,
+.red-bg-78,
+.red-bg-79,
+.red-bg-80,
+.red-bg-81,
+.red-bg-82,
+.red-bg-83,
+.red-bg-84,
+.red-bg-85,
+.red-bg-86,
+.red-bg-87,
+.red-bg-88,
+.red-bg-89,
+.red-bg-90,
+.red-bg-91,
+.red-bg-92,
+.red-bg-93,
+.red-bg-94,
+.red-bg-95,
+.red-bg-96,
+.red-bg-97,
+.red-bg-98,
+.red-bg-99,
+.red-bg-100 {
+    position: relative;
+    }
+.green-bg-0,
+.green-bg-1,
+.green-bg-2,
+.green-bg-3,
+.green-bg-4,
+.green-bg-5,
+.green-bg-6,
+.green-bg-7,
+.green-bg-8,
+.green-bg-9,
+.green-bg-10,
+.green-bg-11,
+.green-bg-12,
+.green-bg-13,
+.green-bg-14,
+.green-bg-15,
+.green-bg-16,
+.green-bg-17,
+.green-bg-18,
+.green-bg-19,
+.green-bg-20,
+.green-bg-21,
+.green-bg-22,
+.green-bg-23,
+.green-bg-24,
+.green-bg-25,
+.green-bg-26,
+.green-bg-27,
+.green-bg-28,
+.green-bg-29,
+.green-bg-30,
+.green-bg-31,
+.green-bg-32,
+.green-bg-33,
+.green-bg-34,
+.green-bg-35,
+.green-bg-36,
+.green-bg-37,
+.green-bg-38,
+.green-bg-39,
+.green-bg-40,
+.green-bg-41,
+.green-bg-42,
+.green-bg-43,
+.green-bg-44,
+.green-bg-45,
+.green-bg-46,
+.green-bg-47,
+.green-bg-48,
+.green-bg-49,
+.green-bg-50,
+.green-bg-51,
+.green-bg-52,
+.green-bg-53,
+.green-bg-54,
+.green-bg-55,
+.green-bg-56,
+.green-bg-57,
+.green-bg-58,
+.green-bg-59,
+.green-bg-60,
+.green-bg-61,
+.green-bg-62,
+.green-bg-63,
+.green-bg-64,
+.green-bg-65,
+.green-bg-66,
+.green-bg-67,
+.green-bg-68,
+.green-bg-69,
+.green-bg-70,
+.green-bg-71,
+.green-bg-72,
+.green-bg-73,
+.green-bg-74,
+.green-bg-75,
+.green-bg-76,
+.green-bg-77,
+.green-bg-78,
+.green-bg-79,
+.green-bg-80,
+.green-bg-81,
+.green-bg-82,
+.green-bg-83,
+.green-bg-84,
+.green-bg-85,
+.green-bg-86,
+.green-bg-87,
+.green-bg-88,
+.green-bg-89,
+.green-bg-90,
+.green-bg-91,
+.green-bg-92,
+.green-bg-93,
+.green-bg-94,
+.green-bg-95,
+.green-bg-96,
+.green-bg-97,
+.green-bg-98,
+.green-bg-99,
+.green-bg-100 {
+    position: relative;
+    }
+.red-bg-0:after,
+.red-bg-1:after,
+.red-bg-2:after,
+.red-bg-3:after,
+.red-bg-4:after,
+.red-bg-5:after,
+.red-bg-6:after,
+.red-bg-7:after,
+.red-bg-8:after,
+.red-bg-9:after,
+.red-bg-10:after,
+.red-bg-11:after,
+.red-bg-12:after,
+.red-bg-13:after,
+.red-bg-14:after,
+.red-bg-15:after,
+.red-bg-16:after,
+.red-bg-17:after,
+.red-bg-18:after,
+.red-bg-19:after,
+.red-bg-20:after,
+.red-bg-21:after,
+.red-bg-22:after,
+.red-bg-23:after,
+.red-bg-24:after,
+.red-bg-25:after,
+.red-bg-26:after,
+.red-bg-27:after,
+.red-bg-28:after,
+.red-bg-29:after,
+.red-bg-30:after,
+.red-bg-31:after,
+.red-bg-32:after,
+.red-bg-33:after,
+.red-bg-34:after,
+.red-bg-35:after,
+.red-bg-36:after,
+.red-bg-37:after,
+.red-bg-38:after,
+.red-bg-39:after,
+.red-bg-40:after,
+.red-bg-41:after,
+.red-bg-42:after,
+.red-bg-43:after,
+.red-bg-44:after,
+.red-bg-45:after,
+.red-bg-46:after,
+.red-bg-47:after,
+.red-bg-48:after,
+.red-bg-49:after,
+.red-bg-50:after,
+.red-bg-51:after,
+.red-bg-52:after,
+.red-bg-53:after,
+.red-bg-54:after,
+.red-bg-55:after,
+.red-bg-56:after,
+.red-bg-57:after,
+.red-bg-58:after,
+.red-bg-59:after,
+.red-bg-60:after,
+.red-bg-61:after,
+.red-bg-62:after,
+.red-bg-63:after,
+.red-bg-64:after,
+.red-bg-65:after,
+.red-bg-66:after,
+.red-bg-67:after,
+.red-bg-68:after,
+.red-bg-69:after,
+.red-bg-70:after,
+.red-bg-71:after,
+.red-bg-72:after,
+.red-bg-73:after,
+.red-bg-74:after,
+.red-bg-75:after,
+.red-bg-76:after,
+.red-bg-77:after,
+.red-bg-78:after,
+.red-bg-79:after,
+.red-bg-80:after,
+.red-bg-81:after,
+.red-bg-82:after,
+.red-bg-83:after,
+.red-bg-84:after,
+.red-bg-85:after,
+.red-bg-86:after,
+.red-bg-87:after,
+.red-bg-88:after,
+.red-bg-89:after,
+.red-bg-90:after,
+.red-bg-91:after,
+.red-bg-92:after,
+.red-bg-93:after,
+.red-bg-94:after,
+.red-bg-95:after,
+.red-bg-96:after,
+.red-bg-97:after,
+.red-bg-98:after,
+.red-bg-99:after,
+.red-bg-100:after {
+    position: absolute;
+    content: "";
+    background: #de262640;
+    left: 0;
+    top: 0;
+    width: 280px;
+    height: 45px;
+    }
+.green-bg-0:after,
+.green-bg-1:after,
+.green-bg-2:after,
+.green-bg-3:after,
+.green-bg-4:after,
+.green-bg-5:after,
+.green-bg-6:after,
+.green-bg-7:after,
+.green-bg-8:after,
+.green-bg-9:after,
+.green-bg-10:after,
+.green-bg-11:after,
+.green-bg-12:after,
+.green-bg-13:after,
+.green-bg-14:after,
+.green-bg-15:after,
+.green-bg-16:after,
+.green-bg-17:after,
+.green-bg-18:after,
+.green-bg-19:after,
+.green-bg-20:after,
+.green-bg-21:after,
+.green-bg-22:after,
+.green-bg-23:after,
+.green-bg-24:after,
+.green-bg-25:after,
+.green-bg-26:after,
+.green-bg-27:after,
+.green-bg-28:after,
+.green-bg-29:after,
+.green-bg-30:after,
+.green-bg-31:after,
+.green-bg-32:after,
+.green-bg-33:after,
+.green-bg-34:after,
+.green-bg-35:after,
+.green-bg-36:after,
+.green-bg-37:after,
+.green-bg-38:after,
+.green-bg-39:after,
+.green-bg-40:after,
+.green-bg-41:after,
+.green-bg-42:after,
+.green-bg-43:after,
+.green-bg-44:after,
+.green-bg-45:after,
+.green-bg-46:after,
+.green-bg-47:after,
+.green-bg-48:after,
+.green-bg-49:after,
+.green-bg-50:after,
+.green-bg-51:after,
+.green-bg-52:after,
+.green-bg-53:after,
+.green-bg-54:after,
+.green-bg-55:after,
+.green-bg-56:after,
+.green-bg-57:after,
+.green-bg-58:after,
+.green-bg-59:after,
+.green-bg-60:after,
+.green-bg-61:after,
+.green-bg-62:after,
+.green-bg-63:after,
+.green-bg-64:after,
+.green-bg-65:after,
+.green-bg-66:after,
+.green-bg-67:after,
+.green-bg-68:after,
+.green-bg-69:after,
+.green-bg-70:after,
+.green-bg-71:after,
+.green-bg-72:after,
+.green-bg-73:after,
+.green-bg-74:after,
+.green-bg-75:after,
+.green-bg-76:after,
+.green-bg-77:after,
+.green-bg-78:after,
+.green-bg-79:after,
+.green-bg-80:after,
+.green-bg-81:after,
+.green-bg-82:after,
+.green-bg-83:after,
+.green-bg-84:after,
+.green-bg-85:after,
+.green-bg-86:after,
+.green-bg-87:after,
+.green-bg-88:after,
+.green-bg-89:after,
+.green-bg-90:after,
+.green-bg-91:after,
+.green-bg-92:after,
+.green-bg-93:after,
+.green-bg-94:after,
+.green-bg-95:after,
+.green-bg-96:after,
+.green-bg-97:after,
+.green-bg-98:after,
+.green-bg-99:after,
+.green-bg-100:after {
+    position: absolute;
+    content: "";
+    background: #26de8140;
+    left: 0;
+    top: 0;
+    width: 280px;
+    height: 45px;
+    }
+.red-bg-0:after {
+    width: 0px;
+}
+.red-bg-1:after {
+    width: 2px;
+}
+.red-bg-2:after {
+    width: 4px;
+}
+.red-bg-3:after {
+    width: 7px;
+}
+.red-bg-4:after {
+    width: 9px;
+}
+.red-bg-5:after {
+    width: 12px;
+}
+.red-bg-6:after {
+    width: 14px;
+}
+.red-bg-7:after {
+    width: 16px;
+}
+.red-bg-8:after {
+    width: 19px;
+}
+.red-bg-9:after {
+    width: 21px;
+}
+.red-bg-10:after {
+    width: 24px;
+}
+.red-bg-11:after {
+    width: 26px;
+}
+.red-bg-12:after {
+    width: 28px;
+}
+.red-bg-13:after {
+    width: 31px;
+}
+.red-bg-14:after {
+    width: 33px;
+}
+.red-bg-15:after {
+    width: 36px;
+}
+.red-bg-16:after {
+    width: 38px;
+}
+.red-bg-17:after {
+    width: 40px;
+}
+.red-bg-18:after {
+    width: 43px;
+}
+.red-bg-19:after {
+    width: 45px;
+}
+.red-bg-20:after {
+    width: 48px;
+}
+.red-bg-21:after {
+    width: 50px;
+}
+.red-bg-22:after {
+    width: 52px;
+}
+.red-bg-23:after {
+    width: 55px;
+}
+.red-bg-24:after {
+    width: 57px;
+}
+.red-bg-25:after {
+    width: 60px;
+}
+.red-bg-26:after {
+    width: 62px;
+}
+.red-bg-27:after {
+    width: 64px;
+}
+.red-bg-28:after {
+    width: 67px;
+}
+.red-bg-29:after {
+    width: 69px;
+}
+.red-bg-30:after {
+    width: 72px;
+}
+.red-bg-31:after {
+    width: 74px;
+}
+.red-bg-32:after {
+    width: 76px;
+}
+.red-bg-33:after {
+    width: 79px;
+}
+.red-bg-34:after {
+    width: 81px;
+}
+.red-bg-35:after {
+    width: 84px;
+}
+.red-bg-36:after {
+    width: 86px;
+}
+.red-bg-37:after {
+    width: 88px;
+}
+.red-bg-38:after {
+    width: 91px;
+}
+.red-bg-39:after {
+    width: 93px;
+}
+.red-bg-40:after {
+    width: 96px;
+}
+.red-bg-41:after {
+    width: 98px;
+}
+.red-bg-42:after {
+    width: 100px;
+}
+.red-bg-43:after {
+    width: 103px;
+}
+.red-bg-44:after {
+    width: 105px;
+}
+.red-bg-45:after {
+    width: 108px;
+}
+.red-bg-46:after {
+    width: 110px;
+}
+.red-bg-47:after {
+    width: 112px;
+}
+.red-bg-48:after {
+    width: 115px;
+}
+.red-bg-49:after {
+    width: 117px;
+}
+.red-bg-50:after {
+    width: 120px;
+}
+.red-bg-51:after {
+    width: 122px;
+}
+.red-bg-52:after {
+    width: 124px;
+}
+.red-bg-53:after {
+    width: 127px;
+}
+.red-bg-54:after {
+    width: 129px;
+}
+.red-bg-55:after {
+    width: 132px;
+}
+.red-bg-56:after {
+    width: 134px;
+}
+.red-bg-57:after {
+    width: 136px;
+}
+.red-bg-58:after {
+    width: 139px;
+}
+.red-bg-59:after {
+    width: 141px;
+}
+.red-bg-60:after {
+    width: 144px;
+}
+.red-bg-61:after {
+    width: 146px;
+}
+.red-bg-62:after {
+    width: 148px;
+}
+.red-bg-63:after {
+    width: 151px;
+}
+.red-bg-64:after {
+    width: 153px;
+}
+.red-bg-65:after {
+    width: 156px;
+}
+.red-bg-66:after {
+    width: 158px;
+}
+.red-bg-67:after {
+    width: 160px;
+}
+.red-bg-68:after {
+    width: 163px;
+}
+.red-bg-69:after {
+    width: 165px;
+}
+.red-bg-70:after {
+    width: 168px;
+}
+.red-bg-71:after {
+    width: 170px;
+}
+.red-bg-72:after {
+    width: 172px;
+}
+.red-bg-73:after {
+    width: 175px;
+}
+.red-bg-74:after {
+    width: 177px;
+}
+.red-bg-75:after {
+    width: 180px;
+}
+.red-bg-76:after {
+    width: 182px;
+}
+.red-bg-77:after {
+    width: 184px;
+}
+.red-bg-78:after {
+    width: 187px;
+}
+.red-bg-79:after {
+    width: 189px;
+}
+.red-bg-80:after {
+    width: 192px;
+}
+.red-bg-81:after {
+    width: 194px;
+}
+.red-bg-82:after {
+    width: 196px;
+}
+.red-bg-83:after {
+    width: 199px;
+}
+.red-bg-84:after {
+    width: 201px;
+}
+.red-bg-85:after {
+    width: 204px;
+}
+.red-bg-86:after {
+    width: 206px;
+}
+.red-bg-87:after {
+    width: 208px;
+}
+.red-bg-88:after {
+    width: 211px;
+}
+.red-bg-89:after {
+    width: 213px;
+}
+.red-bg-90:after {
+    width: 216px;
+}
+.red-bg-91:after {
+    width: 218px;
+}
+.red-bg-92:after {
+    width: 220px;
+}
+.red-bg-93:after {
+    width: 223px;
+}
+.red-bg-94:after {
+    width: 225px;
+}
+.red-bg-95:after {
+    width: 228px;
+}
+.red-bg-96:after {
+    width: 230px;
+}
+.red-bg-97:after {
+    width: 232px;
+}
+.red-bg-98:after {
+    width: 235px;
+}
+.red-bg-99:after {
+    width: 237px;
+}
+.red-bg-100:after {
+    width: 240px;
+}
+.green-bg-0:after {
+    width: 0px;
+}
+.green-bg-1:after {
+    width: 2px;
+}
+.green-bg-2:after {
+    width: 4px;
+}
+.green-bg-3:after {
+    width: 7px;
+}
+.green-bg-4:after {
+    width: 9px;
+}
+.green-bg-5:after {
+    width: 12px;
+}
+.green-bg-6:after {
+    width: 14px;
+}
+.green-bg-7:after {
+    width: 16px;
+}
+.green-bg-8:after {
+    width: 19px;
+}
+.green-bg-9:after {
+    width: 21px;
+}
+.green-bg-10:after {
+    width: 24px;
+}
+.green-bg-11:after {
+    width: 26px;
+}
+.green-bg-12:after {
+    width: 28px;
+}
+.green-bg-13:after {
+    width: 31px;
+}
+.green-bg-14:after {
+    width: 33px;
+}
+.green-bg-15:after {
+    width: 36px;
+}
+.green-bg-16:after {
+    width: 38px;
+}
+.green-bg-17:after {
+    width: 40px;
+}
+.green-bg-18:after {
+    width: 43px;
+}
+.green-bg-19:after {
+    width: 45px;
+}
+.green-bg-20:after {
+    width: 48px;
+}
+.green-bg-21:after {
+    width: 50px;
+}
+.green-bg-22:after {
+    width: 52px;
+}
+.green-bg-23:after {
+    width: 55px;
+}
+.green-bg-24:after {
+    width: 57px;
+}
+.green-bg-25:after {
+    width: 60px;
+}
+.green-bg-26:after {
+    width: 62px;
+}
+.green-bg-27:after {
+    width: 64px;
+}
+.green-bg-28:after {
+    width: 67px;
+}
+.green-bg-29:after {
+    width: 69px;
+}
+.green-bg-30:after {
+    width: 72px;
+}
+.green-bg-31:after {
+    width: 74px;
+}
+.green-bg-32:after {
+    width: 76px;
+}
+.green-bg-33:after {
+    width: 79px;
+}
+.green-bg-34:after {
+    width: 81px;
+}
+.green-bg-35:after {
+    width: 84px;
+}
+.green-bg-36:after {
+    width: 86px;
+}
+.green-bg-37:after {
+    width: 88px;
+}
+.green-bg-38:after {
+    width: 91px;
+}
+.green-bg-39:after {
+    width: 93px;
+}
+.green-bg-40:after {
+    width: 96px;
+}
+.green-bg-41:after {
+    width: 98px;
+}
+.green-bg-42:after {
+    width: 100px;
+}
+.green-bg-43:after {
+    width: 103px;
+}
+.green-bg-44:after {
+    width: 105px;
+}
+.green-bg-45:after {
+    width: 108px;
+}
+.green-bg-46:after {
+    width: 110px;
+}
+.green-bg-47:after {
+    width: 112px;
+}
+.green-bg-48:after {
+    width: 115px;
+}
+.green-bg-49:after {
+    width: 117px;
+}
+.green-bg-50:after {
+    width: 120px;
+}
+.green-bg-51:after {
+    width: 122px;
+}
+.green-bg-52:after {
+    width: 124px;
+}
+.green-bg-53:after {
+    width: 127px;
+}
+.green-bg-54:after {
+    width: 129px;
+}
+.green-bg-55:after {
+    width: 132px;
+}
+.green-bg-56:after {
+    width: 134px;
+}
+.green-bg-57:after {
+    width: 136px;
+}
+.green-bg-58:after {
+    width: 139px;
+}
+.green-bg-59:after {
+    width: 141px;
+}
+.green-bg-60:after {
+    width: 144px;
+}
+.green-bg-61:after {
+    width: 146px;
+}
+.green-bg-62:after {
+    width: 148px;
+}
+.green-bg-63:after {
+    width: 151px;
+}
+.green-bg-64:after {
+    width: 153px;
+}
+.green-bg-65:after {
+    width: 156px;
+}
+.green-bg-66:after {
+    width: 158px;
+}
+.green-bg-67:after {
+    width: 160px;
+}
+.green-bg-68:after {
+    width: 163px;
+}
+.green-bg-69:after {
+    width: 165px;
+}
+.green-bg-70:after {
+    width: 168px;
+}
+.green-bg-71:after {
+    width: 170px;
+}
+.green-bg-72:after {
+    width: 172px;
+}
+.green-bg-73:after {
+    width: 175px;
+}
+.green-bg-74:after {
+    width: 177px;
+}
+.green-bg-75:after {
+    width: 180px;
+}
+.green-bg-76:after {
+    width: 182px;
+}
+.green-bg-77:after {
+    width: 184px;
+}
+.green-bg-78:after {
+    width: 187px;
+}
+.green-bg-79:after {
+    width: 189px;
+}
+.green-bg-80:after {
+    width: 192px;
+}
+.green-bg-81:after {
+    width: 194px;
+}
+.green-bg-82:after {
+    width: 196px;
+}
+.green-bg-83:after {
+    width: 199px;
+}
+.green-bg-84:after {
+    width: 201px;
+}
+.green-bg-85:after {
+    width: 204px;
+}
+.green-bg-86:after {
+    width: 206px;
+}
+.green-bg-87:after {
+    width: 208px;
+}
+.green-bg-88:after {
+    width: 211px;
+}
+.green-bg-89:after {
+    width: 213px;
+}
+.green-bg-90:after {
+    width: 216px;
+}
+.green-bg-91:after {
+    width: 218px;
+}
+.green-bg-92:after {
+    width: 220px;
+}
+.green-bg-93:after {
+    width: 223px;
+}
+.green-bg-94:after {
+    width: 225px;
+}
+.green-bg-95:after {
+    width: 228px;
+}
+.green-bg-96:after {
+    width: 230px;
+}
+.green-bg-97:after {
+    width: 232px;
+}
+.green-bg-98:after {
+    width: 235px;
+}
+.green-bg-99:after {
+    width: 237px;
+}
+.green-bg-100:after {
+    width: 240px;
+}

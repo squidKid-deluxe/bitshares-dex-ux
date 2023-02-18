@@ -1,0 +1,65 @@
+/* consistent styling for buttons  */
+
+button:focus {
+    outline: 1px solid #2a2e39;
+    outline-style: solid;
+}
+label {
+    color: white;
+}
+input[type="radio"],
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+    display: inline-block;
+    padding-right: 0.6vw;
+    flex: 1;
+    padding-left: 0.6vw;
+    background-color: #131722;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 0vw;
+    font-size: 0.8vw;
+}
+
+input[type="radio"]:checked + label,
+input[type="checkbox"]:checked + label {
+    background-color: #2a2e39;
+}
+input[type="radio"]:hover + label,
+input[type="checkbox"]:hover + label {
+    background-color: #343a40;
+}
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.wrap > .a {
+    /*background: lime;*/
+    order: 1;
+}
+.wrap > .b {
+    /*background: orange;*/
+    order: 2;
+    flex: 1;
+}
+.wrap > .c {
+    /*background: aqua;*/
+    order: 3;
+}
+
+@media screen {  and (max-width: 50vw) {
+    .wrap > .b {
+        background: orange;
+        order: 3;
+        min-width: 100%;
+    }
+    .wrap > .c {
+        background: aqua;
+        order: 2;
+    }
+}

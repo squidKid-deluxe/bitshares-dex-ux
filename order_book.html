@@ -1,0 +1,239 @@
+<!--
+ ╔╗ ┬┌┬┐┌─┐┬ ┬┌─┐┬─┐┌─┐┌─┐  ╔╦╗┌─┐─┐ ┬  ╦ ╦─┐ ┬
+ ╠╩╗│ │ └─┐├─┤├─┤├┬┘├┤ └─┐   ║║├┤ ┌┴┬┘  ║ ║┌┴┬┘
+ ╚═╝┴ ┴ └─┘┴ ┴┴ ┴┴└─└─┘└─┘  ═╩╝└─┘┴ └─  ╚═╝┴ └─
+Bitshares Decentralized Exchange User Experience
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+        <title>Bitshares DEX UX - Bitshares Decentralized Exchange User Experience</title>
+        <link rel="icon" href="assets/img/favicon.png" type="image/x-icon" />
+
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="stylesheet" href="buttons.css">
+        <link rel="stylesheet" href="barchart.css">
+        <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/klinecharts/dist/klinecharts.min.js"></script>
+        <script src="main.js"></script>
+        <script>
+            initPair("<<<pair>>>", "<<<asset>>>", "<<<currency>>>", "<<<contract>>>");
+        </script>
+    </head>
+
+    <body id="dark">
+        <div class="container-fluid mtb15 no-fluid">
+            <div class="row sm-gutters">
+                <div class="col-md-3">
+                    <div class="market-pairs">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroup-sizing-sm" style="border-radius: 10px; z-index: 2;">
+                                    <button onclick="firstChoice = false;document.getElementById('coinsearch').value = 'BTC';onenter('wss')" style="background-color: inherit; border: none;">
+                                        <i class="icon ion-md-arrow-back"></i>
+                                    </button>
+                                </span>
+                            </div>
+                            <p>&nbsp;</p>
+                            <input id="coinsearch" type="text" class="form-control" value="BTC" aria-describedby="inputGroup-sizing-sm" onkeydown="onEnter()" style="border-radius: 10px;" />
+                            <p>&nbsp;</p>
+                            <span class="input-group-text" id="inputGroup-sizing-sm" style="border-radius: 10px; z-index: 2;">
+                                <button onclick="onenter('wss')" style="background-color: inherit; border: none;">
+                                    <i class="icon ion-md-search"></i>
+                                </button>
+                            </span>
+                        </div>
+                        <ul class="nav nav-pills" role="tablist">
+                            <div style="display: inline-block;" onchange="clickFilter()">
+                                <input class="radio" type="radio" id="mpa" name="filter" value="MPA" checked />
+                                <label for="mpa">MPA</label>
+                                <input class="radio" type="radio" id="uia" name="filter" value="UIA" />
+                                <label for="uia">UIA</label>
+                                <input class="radio" type="radio" id="lp" name="filter" value="LPT" />
+                                <label for="lp">LPT</label>
+                                <input class="radio" type="radio" id="pool" name="filter" value="Pool" />
+                                <label for="pool">POOL</label>
+                                <input class="radio" type="radio" id="bts" name="filter" value="BTS" />
+                                <label for="bts">BTS</label>
+                            </div>
+                        </ul>
+                        <table class="table" id="pick-a" style="font-family: monospace">
+                            <tbody>
+                                <!-- asset search results auto fills here by python
+                                    first round selection without ticker
+                                    the onclick goes to the second layer below-->
+                                <tr>
+                                    <td>Loading...</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div id="search-results" style="display: none;">
+                            <div class="tab-content">
+                                <div class="tab-pane fade active show" role="tabpanel">
+                                    <table class="table" id="market-pairs">
+                                        <tbody>
+                                            <!-- asset search results auto fills here by python
+                                                second round selection with ticker
+                                                the onclick goes to the order book for the market-->
+                                            <tr>
+                                                <td>Loading...</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="main-chart mb15">
+                        <div class="wrap" style="display: flex;" onchange="sendChartReq()">
+                            <div style="display: inline-block;" class="a">
+                                <input class="radio" type="radio" id="candle2" name="candles" value="line" checked />
+                                <label for="candle2">Line</label>
+
+                                <input class="radio" type="radio" id="candle1" name="candles" value="candle" />
+                                <label for="candle1">Candles</label>
+
+                                <input class="radio" type="radio" id="candle3" name="candles" value="advanced" />
+                                <label for="candle3">Advanced</label>
+                            </div>
+                            <div style="display: inline-block;" class="b">
+                                <center>
+                                <input class="radio" class="radio" type="radio" id="c86400" name="options" value="c86400" checked />
+                                <label for="c86400">1D</label>
+
+                                <input class="radio" type="radio" id="c43200" name="options" value="c43200" />
+                                <label for="c43200">12Hr</label>
+
+                                <input class="radio" type="radio" id="c14400" name="options" value="c14400" />
+                                <label for="c14400">4Hr</label>
+
+                                <input class="radio" type="radio" id="c7200" name="options" value="c7200" />
+                                <label for="c7200">2Hr</label>
+
+                                <input class="radio" type="radio" id="c3600" name="options" value="c3600" />
+                                <label for="c3600">1Hr</label>
+
+                                <input class="radio" type="radio" id="c1800" name="options" value="c1800" />
+                                <label for="c1800">30Min</label>
+
+                                <input class="radio" type="radio" id="c900" name="options" value="c900" />
+                                <label for="c900">15Min</label>
+
+                                <input class="radio" type="radio" id="discrete" name="options" value="discrete" />
+                                <label for="discrete">Discrete</label>
+                                </center>
+                            </div>
+                            <div class="c">
+                                <div style="display: inline-block;" onchange="log_button()">
+                                    <input type="checkbox" id="log" name="log" value="1" />
+                                    <label for="log">Log</label>
+                                </div>
+                                <div style="display: inline-block;" onchange="invert_market()">
+                                    <input type="checkbox" id="inv" name="inv" value="0" />
+                                    <label for="inv">Invert</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="chart-window" style="border: 1px solid #2a2e39; border-radius: 2px; z-index: -2;height:550px;"></div>
+                        <div id="kline-window" style="border: 1px solid #2a2e39; border-radius: 2px; z-index: -2;height:550px;display:none;"></div>
+                    </div>
+                    <div class="market-trade">
+                        <ul class="nav nav-pills" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="pill" href="#pills-trade-limit" role="tab" aria-selected="true">Limit</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="pills-trade-limit" role="tabpanel">
+                                <div class="d-flex justify-content-between">
+                                    <div class="market-trade-buy">
+                                        <div class="input-group">
+                                            <input type="number" class="form-control" placeholder="Price" id="assetAmount" />
+                                            <div class="input-group-append">
+                                                <span class="input-group-text" id="asset">BTS</span>
+                                            </div>
+                                        </div>
+                                        <div class="input-group">
+                                            <input type="number" class="form-control" placeholder="Amount" id="currencyAmount" />
+                                            <div class="input-group-append">
+                                                <span class="input-group-text" id="currency">HONEST.MONEY</span>
+                                            </div>
+                                        </div>
+                                        <p>Available: <span>0 BTC = 0 USD</span></p>
+                                        <p>Volume: <span>0 BTC = 0 USD</span></p>
+                                        <p>Margin: <span>0 BTC = 0 USD</span></p>
+                                        <p>Fee: <span>0 BTC = 0 USD</span></p>
+                                        <button class="btn buy">Buy</button>
+                                    </div>
+                                    <div class="market-trade-sell">
+                                        <div class="input-group">
+                                            <input type="number" class="form-control" placeholder="Price" id="assetAmount" />
+                                            <div class="input-group-append">
+                                                <span class="input-group-text" id="asset">BTS</span>
+                                            </div>
+                                        </div>
+                                        <div class="input-group">
+                                            <input type="number" class="form-control" placeholder="Amount" id="currencyAmount" />
+                                            <div class="input-group-append">
+                                                <span class="input-group-text" id="currency">HONEST.MONEY</span>
+                                            </div>
+                                        </div>
+                                        <p>Available: <span>0 BTC = 0 USD</span></p>
+                                        <p>Volume: <span>0 BTC = 0 USD</span></p>
+                                        <p>Margin: <span>0 BTC = 0 USD</span></p>
+                                        <p>Fee: <span>0 BTC = 0 USD</span></p>
+                                        <button class="btn sell">Sell</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="order-book mb15">
+                        <h2 class="heading">Order Book</h2>
+                        <table class="table" id="orderbook"></table>
+                    </div>
+                    <div class="market-history">
+                        <ul class="nav nav-pills" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="pill" href="#recent-trades" role="tab" aria-selected="false">Recent Trades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="pill" href="#market-depth" role="tab" aria-selected="true">Market Depth</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade show" id="recent-trades" role="tabpanel">
+                                <table class="table">
+                                    <tbody>
+                                        Loading...
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade show active" id="market-depth" role="tabpanel">
+                                <div class="depth-chart-container">
+                                    <div class="depth-chart-inner">
+                                        <div id="myPlot" style="width: 100%; height: 298px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <pre id="blocknum" style="color: white;"></pre>
+        <pre id="ticker" style="color: white;"></pre>
+    </body>
+</html>
