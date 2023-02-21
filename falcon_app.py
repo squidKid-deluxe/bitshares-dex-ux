@@ -16,7 +16,6 @@ import traceback
 # THIRD PARTY MODULES
 import falcon
 import falcon.asgi
-import websockets
 
 # BITSHARES DEX UX MODULES
 from database import Sql
